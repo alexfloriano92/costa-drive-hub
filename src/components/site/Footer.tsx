@@ -49,8 +49,8 @@ export function Footer() {
       </div>
       <div className="border-t border-border/60 py-6 text-center text-xs text-muted-foreground">
         © {new Date().getFullYear()} Costa Veículos — Todos os direitos reservados.
-        <Link to="/auth" className="ml-3 text-silver/40 hover:text-silver">Acesso admin</Link>
       </div>
+
     </footer>
   );
 }
