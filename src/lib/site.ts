@@ -18,8 +18,9 @@ export const SITE = {
 
 export function whatsappLink(message?: string) {
   const text = encodeURIComponent(message ?? "Olá! Tenho interesse em um veículo da Costa Veículos.");
-  return `https://wa.me/${SITE.whatsappRaw}?text=${text}`;
+  return `https://api.whatsapp.com/send?phone=${SITE.whatsappRaw}&text=${text}`;
 }
+
 
 export function formatBRL(value: number | string) {
   const n = typeof value === "string" ? Number(value) : value;
