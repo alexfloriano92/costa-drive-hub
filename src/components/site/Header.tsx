@@ -19,7 +19,19 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
+      <div className="border-b border-border/40 bg-gradient-to-r from-background via-card/60 to-background">
+        <div className="mx-auto flex max-w-7xl items-center justify-end gap-4 px-4 py-1.5 md:px-8 text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+          <Link
+            to="/auth"
+            className="group inline-flex items-center gap-1.5 rounded-full border border-silver/20 bg-card/40 px-3 py-1 text-silver transition hover:border-silver/60 hover:text-silver-bright"
+          >
+            <Lock className="size-3 transition group-hover:scale-110" />
+            <span>Área Restrita</span>
+          </Link>
+        </div>
+      </div>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
+
         <Link to="/" className="flex items-center gap-3">
           <img src={logo.url} alt="Costa Veículos" className="size-24 md:size-28 rounded-full ring-2 ring-silver/40 shadow-glow object-cover" />
           <div className="hidden sm:block leading-tight">
