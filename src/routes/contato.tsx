@@ -52,7 +52,7 @@ function Contato() {
         <iframe
           title="Localização Costa Veículos"
           src="https://www.google.com/maps?q=Rodovia+Prefeito+Jo%C3%A3o+Belmiro+da+Costa%2C+146+-+Centro%2C+Cachoeira+de+Minas+-+MG&output=embed"
-          className="w-full h-[400px]"
+          className="w-full h-[240px]"
           loading="lazy"
         />
       </div>
