@@ -46,13 +46,13 @@ function AuthPage() {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
         toast.success("Bem-vindo!");
-        navigate({ to: "/admin" });
+        navigate({ to: "/admin/novo", replace: true });
       } else {
         await bootstrap({ data: { email, password } });
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
         toast.success("Conta de administrador criada.");
-        navigate({ to: "/admin" });
+        navigate({ to: "/admin/novo", replace: true });
       }
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Erro ao autenticar.");
