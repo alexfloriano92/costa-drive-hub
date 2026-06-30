@@ -4,10 +4,10 @@ import { whatsappLink } from "@/lib/site";
 import { MessageCircle, Menu, X } from "lucide-react";
 import { useState } from "react";
 
-const nav = [
+const nav: Array<{ to: string; label: string; hash?: string }> = [
   { to: "/", label: "Início" },
   { to: "/estoque", label: "Estoque" },
-  { to: "/contato", label: "Contato" },
+  { to: "/", hash: "contato", label: "Contato" },
 ];
 
 export function Header() {
@@ -29,11 +29,12 @@ export function Header() {
 
         <nav className="hidden md:flex items-center gap-8">
           {nav.map((n) => {
-            const active = pathname === n.to || (n.to !== "/" && pathname.startsWith(n.to));
+            const active = !n.hash && (pathname === n.to || (n.to !== "/" && pathname.startsWith(n.to)));
             return (
               <Link
-                key={n.to}
+                key={`${n.to}#${n.hash ?? ""}`}
                 to={n.to}
+                hash={n.hash}
                 className={`text-sm uppercase tracking-widest transition-colors ${
                   active ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
@@ -69,8 +70,9 @@ export function Header() {
           <div className="flex flex-col px-4 py-3">
             {nav.map((n) => (
               <Link
-                key={n.to}
+                key={`${n.to}#${n.hash ?? ""}`}
                 to={n.to}
+                hash={n.hash}
                 onClick={() => setOpen(false)}
                 className="py-3 text-sm uppercase tracking-widest text-muted-foreground hover:text-foreground"
               >
