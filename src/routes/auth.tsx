@@ -13,7 +13,7 @@ export const Route = createFileRoute("/auth")({
   head: () => ({ meta: [{ title: "Acesso administrativo — Costa Veículos" }] }),
   beforeLoad: async () => {
     const { data } = await supabase.auth.getSession();
-    if (data.session) throw redirect({ to: "/admin" });
+    if (data.session) throw redirect({ to: "/admin/novo" });
   },
   component: AuthPage,
 });
