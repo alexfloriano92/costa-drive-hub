@@ -3,7 +3,8 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { SignedImage } from "@/components/site/SignedImage";
 import { formatBRL, formatKm, whatsappLink } from "@/lib/site";
-import { ArrowLeft, Calendar, Fuel, Gauge, MessageCircle, Palette, Settings2 } from "lucide-react";
+import { ArrowLeft, Calendar, Fuel, Gauge, Palette, Settings2 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/site/WhatsAppFloat";
 import { useState } from "react";
 
 export const Route = createFileRoute("/veiculo/$id")({
@@ -80,8 +81,8 @@ function VeiculoDetalhe() {
             <div className="text-[10px] uppercase tracking-widest text-silver">Preço</div>
             <div className="mt-1 font-display text-4xl text-gradient-silver">{formatBRL(Number(v.price))}</div>
             {!sold && (
-              <a href={whatsappLink(msg)} target="_blank" rel="noopener noreferrer" className="mt-6 flex items-center justify-center gap-2 rounded-full bg-success py-3 text-sm uppercase tracking-widest text-black hover:opacity-90 transition">
-                <MessageCircle className="size-4" /> Tenho interesse
+              <a href={whatsappLink(msg)} target="_blank" rel="noopener noreferrer" className="mt-6 flex items-center justify-center gap-2 rounded-full bg-[#25D366] py-3 text-sm uppercase tracking-widest text-black hover:opacity-90 transition">
+                <WhatsAppIcon className="size-5" /> Tenho interesse
               </a>
             )}
           </div>
