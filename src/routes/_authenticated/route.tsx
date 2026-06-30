@@ -7,12 +7,15 @@ export const Route = createFileRoute("/_authenticated")({
     const { data, error } = await supabase.auth.getUser();
     if (error || !data.user) throw redirect({ to: "/auth" });
 
-    const { data: roleRow } = await supabase
+    const { data: roleRow, error: roleError } = await supabase
       .from("user_roles")
       .select("id")
       .eq("user_id", data.user.id)
       .eq("role", "admin")
       .maybeSingle();
+
+    if (roleError) throw roleError;
+
     if (!roleRow) {
       await supabase.auth.signOut();
       throw redirect({ to: "/auth" });
