@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="border-t border-border/60 bg-card/40 mt-24">
       <div className="mx-auto max-w-7xl px-4 md:px-8 py-14 grid gap-10 md:grid-cols-4">
         <div>
-          <img src={logo.url} alt="Costa Veículos" className="size-24 rounded-full ring-2 ring-silver/40 object-cover" />
+          <img src={logo.url} alt="Costa Veículos" className="size-32 rounded-full ring-2 ring-silver/40 object-cover" />
           <p className="mt-4 text-sm text-muted-foreground max-w-xs">{SITE.tagline}. Atendemos Cachoeira de Minas e região.</p>
           <a href={SITE.instagram} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm text-silver hover:text-silver-bright">
             <Instagram className="size-4" /> @veiculos.costa

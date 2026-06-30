@@ -117,7 +117,7 @@ function Home() {
           </div>
         ) : (
           <div className="rounded-xl border border-dashed border-border p-12 text-center">
-            <img src={logo.url} alt="Costa Veículos" className="mx-auto size-32 rounded-full opacity-70 object-cover" />
+            <img src={logo.url} alt="Costa Veículos" className="mx-auto size-48 rounded-full object-cover" />
             <p className="mt-4 text-muted-foreground">Em breve, novos veículos no estoque.</p>
             <a href={whatsappLink("Olá! Gostaria de saber sobre os veículos disponíveis.")} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-silver hover:text-silver-bright">
               <MessageCircle className="size-4" /> Consultar pelo WhatsApp
