@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
       { title: "Costa Veículos — Seminovos em Cachoeira de Minas - MG" },
       { name: "description", content: "Seminovos com procedência e garantia. Financiamento facilitado. Loja localizada em Cachoeira de Minas - MG." },
       { property: "og:title", content: "Costa Veículos — Seminovos com garantia" },
-      { property: "og:description", content: "Veículos com procedência. Atendemos todo o Sul de Minas." },
+      { property: "og:description", content: "Veículos com procedência em Cachoeira de Minas — MG." },
     ],
   }),
   component: Home,
@@ -49,7 +49,7 @@ function Home() {
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-2 rounded-full border border-silver/30 bg-silver/5 px-4 py-1.5 text-[10px] uppercase tracking-[0.3em] text-silver">
               <span className="size-1.5 rounded-full bg-success animate-pulse" />
-              Sul de Minas — MG
+              Cachoeira de Minas — MG
             </span>
             <h1 className="mt-6 font-display text-5xl md:text-7xl leading-[1.05]">
               Seu próximo carro com <span className="text-gradient-silver">procedência</span> e garantia.
@@ -117,7 +117,7 @@ function Home() {
           </div>
         ) : (
           <div className="rounded-xl border border-dashed border-border p-12 text-center">
-            <img src={logo.url} alt="" className="mx-auto size-20 rounded-full opacity-50" />
+            <img src={logo.url} alt="Costa Veículos" className="mx-auto size-32 rounded-full opacity-70 object-cover" />
             <p className="mt-4 text-muted-foreground">Em breve, novos veículos no estoque.</p>
             <a href={whatsappLink("Olá! Gostaria de saber sobre os veículos disponíveis.")} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-silver hover:text-silver-bright">
               <MessageCircle className="size-4" /> Consultar pelo WhatsApp
@@ -130,11 +130,11 @@ function Home() {
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24 border-t border-border/60 grid md:grid-cols-2 gap-16 items-center">
         <div>
           <span className="text-[10px] uppercase tracking-[0.3em] text-silver">Sobre a loja</span>
-          <h2 className="mt-2 font-display text-4xl md:text-5xl">Tradição em <span className="text-gradient-silver">seminovos</span> no Sul de Minas.</h2>
+          <h2 className="mt-2 font-display text-4xl md:text-5xl">Tradição em <span className="text-gradient-silver">seminovos</span> em Cachoeira de Minas.</h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
             A Costa Veículos é uma loja de seminovos de qualidade, com veículos vistoriados,
-            garantia e procedência. Trabalhamos com carros e motos, atendendo clientes em toda
-            a região do Sul de Minas a partir de Cachoeira de Minas — MG.
+            garantia e procedência. Trabalhamos com carros e motos, atendendo clientes em
+            Cachoeira de Minas — MG e toda a região.
           </p>
           <div className="mt-8 flex gap-3">
             <Link to="/estoque" className="rounded-full border border-silver/40 px-6 py-2.5 text-sm uppercase tracking-widest hover:bg-silver/10">Ver estoque</Link>
