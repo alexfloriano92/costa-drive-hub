@@ -5,7 +5,7 @@ import { VehicleCard } from "@/components/site/VehicleCard";
 import { SITE, whatsappLink } from "@/lib/site";
 import heroImg from "@/assets/hero-car.jpg";
 import logo from "@/assets/costa-logo.jpg.asset.json";
-import { ShieldCheck, Award, Handshake, MessageCircle, ArrowRight, Star } from "lucide-react";
+import { ShieldCheck, Award, Handshake, MessageCircle, ArrowRight, Star, MapPin, Phone, Clock, Instagram } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
