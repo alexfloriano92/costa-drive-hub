@@ -161,6 +161,50 @@ function Home() {
         </div>
       </section>
 
+      {/* LOCATION & CONTACT */}
+      <section className="mx-auto max-w-7xl px-4 md:px-8 py-24 border-t border-border/60">
+        <div className="grid gap-10 md:grid-cols-2 items-start">
+          <div>
+            <span className="text-[10px] uppercase tracking-[0.3em] text-silver">Localização & Contato</span>
+            <h2 className="mt-2 font-display text-4xl md:text-5xl">Venha nos visitar</h2>
+            <p className="mt-4 text-muted-foreground">Estamos em Cachoeira de Minas - MG. Atendimento presencial ou pelo WhatsApp.</p>
+
+            <ul className="mt-8 space-y-4 text-sm">
+              <li className="flex gap-3"><MapPin className="size-5 mt-0.5 text-silver shrink-0" /><span className="text-muted-foreground">{SITE.address}</span></li>
+              <li className="flex gap-3"><Phone className="size-5 mt-0.5 text-silver shrink-0" /><a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="hover:text-silver-bright">{SITE.phone}</a></li>
+              <li className="flex gap-3"><Instagram className="size-5 mt-0.5 text-silver shrink-0" /><a href={SITE.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-silver-bright">@veiculos.costa</a></li>
+              <li className="flex gap-3">
+                <Clock className="size-5 mt-0.5 text-silver shrink-0" />
+                <div className="text-muted-foreground">
+                  <div>Seg–Sex: 08:00 – 18:00</div>
+                  <div>Sábado: 08:00 – 12:00</div>
+                  <div>Domingo: Fechado</div>
+                </div>
+              </li>
+            </ul>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-success px-6 py-2.5 text-sm uppercase tracking-widest text-black hover:opacity-90">
+                <MessageCircle className="size-4" /> WhatsApp
+              </a>
+              <Link to="/contato" className="inline-flex items-center gap-2 rounded-full border border-silver/40 px-6 py-2.5 text-sm uppercase tracking-widest hover:bg-silver/10">
+                Mais detalhes <ArrowRight className="size-4" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-xl border border-border/60">
+            <iframe
+              title="Localização Costa Veículos"
+              src="https://www.google.com/maps?q=Rodovia+Prefeito+Jo%C3%A3o+Belmiro+da+Costa%2C+146+-+Centro%2C+Cachoeira+de+Minas+-+MG&output=embed"
+              className="w-full h-[320px]"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+
       {/* CTA */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 pb-24">
         <div className="rounded-2xl border border-silver/20 bg-gradient-to-br from-card via-card to-background p-10 md:p-16 text-center shadow-premium">
