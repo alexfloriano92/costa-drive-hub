@@ -1,8 +1,9 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import logo from "@/assets/costa-logo.jpg.asset.json";
 import { whatsappLink } from "@/lib/site";
-import { MessageCircle, Menu, X } from "lucide-react";
+import { MessageCircle, Menu, X, Lock } from "lucide-react";
 import { useState } from "react";
+
 
 const nav: Array<{ to: string; label: string; hash?: string }> = [
   { to: "/", label: "Início" },
