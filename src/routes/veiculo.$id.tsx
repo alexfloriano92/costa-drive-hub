@@ -3,7 +3,8 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { SignedImage } from "@/components/site/SignedImage";
 import { formatBRL, formatKm, whatsappLink } from "@/lib/site";
-import { ArrowLeft, Calendar, Fuel, Gauge, MessageCircle, Palette, Settings2 } from "lucide-react";
+import { ArrowLeft, Calendar, Fuel, Gauge, Palette, Settings2 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/site/WhatsAppFloat";
 import { useState } from "react";
 
 export const Route = createFileRoute("/veiculo/$id")({
