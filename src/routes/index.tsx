@@ -162,7 +162,7 @@ function Home() {
       </section>
 
       {/* LOCATION & CONTACT */}
-      <section className="mx-auto max-w-7xl px-4 md:px-8 py-24 border-t border-border/60">
+      <section id="contato" className="scroll-mt-24 mx-auto max-w-7xl px-4 md:px-8 py-24 border-t border-border/60">
         <div className="grid gap-10 md:grid-cols-2 items-start">
           <div>
             <span className="text-[10px] uppercase tracking-[0.3em] text-silver">Localização & Contato</span>
