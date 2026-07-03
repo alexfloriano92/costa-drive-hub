@@ -1,0 +1,56 @@
+# Costa Veículos — SPA fallback + segurança
+# Coloque este arquivo na raiz (public_html/)
+
+Options -Indexes
+ServerSignature Off
+
+# Força HTTPS
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Bloqueia acesso ao .env
+<Files ".env">
+    Require all denied
+</Files>
+<Files ".env.example">
+    Require all denied
+</Files>
+
+# SPA fallback: qualquer rota que não seja arquivo/pasta real vai para index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Não reescreve /api/ (deixa o PHP responder)
+    RewriteCond %{REQUEST_URI} ^/api/ [NC]
+    RewriteRule ^ - [L]
+    # Não reescreve /uploads/
+    RewriteCond %{REQUEST_URI} ^/uploads/ [NC]
+    RewriteRule ^ - [L]
+    # Arquivos e pastas reais passam
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+    # Resto vai para index.html (SPA)
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+# Cache dos assets estáticos
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css              "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/jpeg            "access plus 1 month"
+    ExpiresByType image/png             "access plus 1 month"
+    ExpiresByType image/webp            "access plus 1 month"
+    ExpiresByType image/svg+xml         "access plus 1 month"
+    ExpiresByType font/woff2            "access plus 1 year"
+</IfModule>
+
+# Segurança básica
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

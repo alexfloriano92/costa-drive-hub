@@ -1,0 +1,9 @@
+# Bloqueia acesso direto a arquivos da pasta lib/
+<FilesMatch "\.(md|json|log)$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^lib/ - [F,L]
+</IfModule>
