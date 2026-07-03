@@ -49,21 +49,11 @@ Cole esse SQL no **phpMyAdmin → SQL** e execute.
 
 ---
 
-## Passo 3 — Migrar dados existentes do Supabase (opcional)
+## Passo 3 — Cadastro manual dos veículos
 
-Rode localmente:
+Após o site no ar, acesse `/auth`, entre com o admin criado no passo 2 e vá em `/admin → Novo veículo` para cadastrar cada carro/moto com suas fotos.
 
-```bash
-cd migrate
-npm install
-node export-from-supabase.mjs
-```
-
-Isso gera:
-- `../uploads/vehicles/<uuid>-<nome>.jpg` — todas as imagens baixadas
-- `../seed-vehicles.sql` — INSERTs de todos os veículos
-
-Importe `seed-vehicles.sql` no phpMyAdmin depois do `schema.sql`.
+> A pasta `uploads/vehicles/` deve subir **vazia** por FTP, apenas para existir com permissão 755 — as imagens serão enviadas pelo próprio painel admin.
 
 ---
 
