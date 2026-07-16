@@ -36,8 +36,8 @@ export function Header() {
           <img
             src={logo.url}
             alt="Costa Veículos"
-            className="size-36 md:size-44 rounded-full ring-2 ring-primary/40 shadow-glow object-cover"
-            style={{ imageRendering: "auto" }}
+            className="h-24 md:h-28 w-auto object-contain"
+            style={{ mixBlendMode: "screen" }}
           />
         </Link>
 
