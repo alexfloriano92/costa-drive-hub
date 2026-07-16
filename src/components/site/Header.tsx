@@ -32,12 +32,13 @@ export function Header() {
       </div>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
 
-        <Link to="/" className="flex items-center gap-3">
-          <img src={logo.url} alt="Costa Veículos" className="size-24 md:size-28 rounded-full ring-2 ring-silver/40 shadow-glow object-cover" />
-          <div className="hidden sm:block leading-tight">
-            <div className="font-display text-base tracking-wide">COSTA</div>
-            <div className="text-[10px] uppercase tracking-[0.3em] text-silver">Veículos</div>
-          </div>
+        <Link to="/" className="flex items-center" aria-label="Costa Veículos — Início">
+          <img
+            src={logo.url}
+            alt="Costa Veículos"
+            className="size-36 md:size-44 rounded-full ring-2 ring-primary/40 shadow-glow object-cover"
+            style={{ imageRendering: "auto" }}
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
