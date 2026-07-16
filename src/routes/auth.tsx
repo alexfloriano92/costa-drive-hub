@@ -4,7 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useServerFn } from "@tanstack/react-start";
 import { useQuery } from "@tanstack/react-query";
 import { checkAdminExists, bootstrapFirstAdmin } from "@/lib/admin.functions";
-import logo from "@/assets/costa-logo.jpg.asset.json";
+import logo from "@/assets/costa-logo-transparent.png.asset.json";
 import { Link } from "@tanstack/react-router";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
@@ -65,8 +65,9 @@ function AuthPage() {
     <div className="min-h-screen grid place-items-center px-4 py-12 bg-hero">
       <div className="w-full max-w-md">
         <Link to="/" className="flex justify-center mb-8" aria-label="Costa Veículos — Início">
-          <img src={logo.url} alt="Costa Veículos" className="h-40 md:h-48 w-auto object-contain" style={{ mixBlendMode: "screen" }} />
+          <img src={logo.url} alt="Costa Veículos" className="h-56 md:h-64 w-auto object-contain" />
         </Link>
+
 
         <div className="rounded-2xl border border-silver/20 bg-card p-8 shadow-premium">
           <h1 className="font-display text-2xl">
