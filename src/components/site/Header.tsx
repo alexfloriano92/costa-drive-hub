@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import logo from "@/assets/costa-logo.jpg.asset.json";
+import logo from "@/assets/costa-logo-transparent.png.asset.json";
 import { whatsappLink } from "@/lib/site";
 import { MessageCircle, Menu, X, Lock } from "lucide-react";
 import { useState } from "react";
