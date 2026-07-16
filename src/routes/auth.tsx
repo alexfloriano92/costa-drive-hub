@@ -64,12 +64,8 @@ function AuthPage() {
   return (
     <div className="min-h-screen grid place-items-center px-4 py-12 bg-hero">
       <div className="w-full max-w-md">
-        <Link to="/" className="flex flex-col items-center gap-3 mb-8">
-          <img src={logo.url} alt="Costa Veículos" className="size-20 rounded-full ring-1 ring-silver/30" />
-          <div className="text-center">
-            <div className="font-display text-2xl">COSTA</div>
-            <div className="text-[10px] uppercase tracking-[0.3em] text-silver">Veículos</div>
-          </div>
+        <Link to="/" className="flex justify-center mb-8" aria-label="Costa Veículos — Início">
+          <img src={logo.url} alt="Costa Veículos" className="size-44 md:size-52 rounded-full ring-2 ring-primary/40 shadow-glow object-cover" />
         </Link>
 
         <div className="rounded-2xl border border-silver/20 bg-card p-8 shadow-premium">
