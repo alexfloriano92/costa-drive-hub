@@ -36,7 +36,7 @@ export function Header() {
           <img
             src={logo.url}
             alt="Costa Veículos"
-            className="h-36 md:h-44 w-auto object-contain"
+            className="h-16 md:h-20 w-auto object-contain"
           />
 
         </Link>
