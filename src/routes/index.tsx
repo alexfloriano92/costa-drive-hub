@@ -57,9 +57,10 @@ function Home() {
       {/* ============ HERO ============ */}
       <section className="relative isolate overflow-hidden bg-hero">
         <div className="absolute inset-0 -z-10">
-          <img src={heroImg} alt="" width={1920} height={1080} className="size-full object-cover opacity-40" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/60" />
+          <img src={heroImg} alt="" width={1920} height={1080} className="size-full object-cover opacity-90" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/30" />
+
           <div className="absolute -top-40 -right-40 size-[600px] rounded-full bg-primary/10 blur-3xl" />
         </div>
 
