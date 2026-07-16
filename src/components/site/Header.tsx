@@ -34,7 +34,7 @@ export function Header() {
 
         <Link to="/" className="flex items-center -my-6 md:-my-8" aria-label="Costa Veículos — Início">
           <img
-            src={logo.url}
+            src={logoUrl}
             alt="Costa Veículos"
             className="h-36 md:h-44 w-auto object-contain"
           />
