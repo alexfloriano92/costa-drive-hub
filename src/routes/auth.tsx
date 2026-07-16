@@ -109,7 +109,7 @@ function AuthPage() {
         </div>
 
         <p className="mt-6 text-center text-xs text-muted-foreground">
-          <Link to="/" className="hover:text-silver">← Voltar ao site</Link>
+          <Link to="/" className="inline-flex items-center gap-2 rounded-full border border-primary/40 px-6 py-2.5 text-xs uppercase tracking-widest text-primary hover:bg-primary hover:text-primary-foreground transition">← Voltar ao site</Link>
         </p>
       </div>
     </div>
