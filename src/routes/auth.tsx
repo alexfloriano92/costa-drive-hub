@@ -65,7 +65,7 @@ function AuthPage() {
     <div className="min-h-screen grid place-items-center px-4 py-12 bg-hero">
       <div className="w-full max-w-md">
         <Link to="/" className="flex justify-center mb-8" aria-label="Costa Veículos — Início">
-          <img src={logo.url} alt="Costa Veículos" className="h-56 md:h-64 w-auto object-contain" />
+          <img src={logoUrl} alt="Costa Veículos" className="h-56 md:h-64 w-auto object-contain" />
         </Link>
 
 
