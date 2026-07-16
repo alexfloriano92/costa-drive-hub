@@ -30,14 +30,15 @@ export function Header() {
           </Link>
         </div>
       </div>
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-0 md:px-8">
 
-        <Link to="/" className="flex items-center" aria-label="Costa Veículos — Início">
+        <Link to="/" className="flex items-center -my-6 md:-my-8" aria-label="Costa Veículos — Início">
           <img
             src={logo.url}
             alt="Costa Veículos"
-            className="h-16 md:h-20 w-auto object-contain"
+            className="h-36 md:h-44 w-auto object-contain"
           />
+
 
         </Link>
 
