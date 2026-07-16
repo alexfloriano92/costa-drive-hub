@@ -65,7 +65,7 @@ function AuthPage() {
     <div className="min-h-screen grid place-items-center px-4 py-12 bg-hero">
       <div className="w-full max-w-md">
         <Link to="/" className="flex justify-center mb-8" aria-label="Costa Veículos — Início">
-          <img src={logo.url} alt="Costa Veículos" className="size-44 md:size-52 rounded-full ring-2 ring-primary/40 shadow-glow object-cover" />
+          <img src={logo.url} alt="Costa Veículos" className="h-40 md:h-48 w-auto object-contain" style={{ mixBlendMode: "screen" }} />
         </Link>
 
         <div className="rounded-2xl border border-silver/20 bg-card p-8 shadow-premium">
