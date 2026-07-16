@@ -169,17 +169,12 @@ function Home() {
           </div>
         )}
 
-        <div className="mt-10 rounded-xl border border-primary/20 bg-primary/5 p-5 md:p-6 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <TrendingUp className="size-5 text-primary shrink-0" />
-            <p className="text-sm text-muted-foreground">
-              <span className="text-foreground font-medium">Não achou o carro ideal?</span> Trabalhamos com busca personalizada. Diga o que procura e encontramos.
-            </p>
-          </div>
-          <a href={whatsappLink("Olá! Estou procurando um carro específico, podem me ajudar?")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-xs uppercase tracking-widest text-primary-foreground hover:bg-accent">
-            <MessageCircle className="size-3.5" /> Falar no WhatsApp
-          </a>
+        <div className="mt-10 flex justify-center">
+          <Link to="/estoque" className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm uppercase tracking-widest text-primary-foreground font-medium hover:bg-accent transition shadow-glow">
+            Ver todos os veículos <ArrowRight className="size-4" />
+          </Link>
         </div>
+
       </section>
 
       {/* ============ PROCESS ============ */}
