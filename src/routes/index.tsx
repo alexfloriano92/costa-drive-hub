@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
 });
 
 // Demo cars — for owner presentation until real inventory is loaded via Admin
-const DEMO_VEHICLES = [
+const DEMO_VEHICLES: ReadonlyArray<{ id: string; brand: string; model: string; year: number; mileage: number; price: number; fuel: string; category: string; img: string; tag?: string }> = [
   { id: "d1", brand: "Volkswagen", model: "Nivus Highline", year: 2023, mileage: 28500, price: 129900, fuel: "Flex", category: "SUV", img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80", tag: "Novo no estoque" },
   { id: "d2", brand: "Toyota", model: "Corolla XEi", year: 2022, mileage: 42000, price: 138500, fuel: "Flex", category: "Sedan", img: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=1200&q=80", tag: "Destaque" },
   { id: "d3", brand: "Jeep", model: "Compass Longitude", year: 2021, mileage: 58000, price: 149900, fuel: "Diesel", category: "SUV", img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80", tag: "Único dono" },
@@ -32,7 +32,7 @@ const DEMO_VEHICLES = [
   { id: "d6", brand: "Toyota", model: "Hilux SRX 4x4", year: 2022, mileage: 71000, price: 289900, fuel: "Diesel", category: "Picape", img: "https://images.unsplash.com/photo-1519752594763-2633d556c1e8?auto=format&fit=crop&w=1200&q=80", tag: "Top de linha" },
   { id: "d7", brand: "Hyundai", model: "HB20 Comfort", year: 2022, mileage: 31500, price: 74900, fuel: "Flex", category: "Hatch", img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80" },
   { id: "d8", brand: "Yamaha", model: "MT-07 ABS", year: 2023, mileage: 8200, price: 52900, fuel: "Gasolina", category: "Moto", img: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1200&q=80", tag: "Semi-nova" },
-] as const;
+];
 
 function Home() {
   const featured = useQuery({
