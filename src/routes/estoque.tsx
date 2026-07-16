@@ -67,7 +67,7 @@ function Estoque() {
       <div className="mb-10">
         <span className="text-[10px] uppercase tracking-[0.3em] text-silver">Catálogo</span>
         <h1 className="mt-2 font-display text-4xl md:text-5xl">Nosso estoque</h1>
-        <p className="mt-3 text-muted-foreground">{filtered.length} veículo{filtered.length !== 1 ? "s" : ""} disponível{filtered.length !== 1 ? "is" : ""}</p>
+        <p className="mt-3 text-muted-foreground">{filtered.length} {filtered.length === 1 ? "veículo disponível" : "veículos disponíveis"}</p>
       </div>
 
       <div className="grid lg:grid-cols-[280px_1fr] gap-8">
