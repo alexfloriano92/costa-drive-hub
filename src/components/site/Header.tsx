@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import logo from "@/assets/costa-logo-transparent.png.asset.json";
+import logoUrl from "@/assets/costa-logo-transparent-v2.png";
 import { whatsappLink } from "@/lib/site";
 import { MessageCircle, Menu, X, Lock } from "lucide-react";
 import { useState } from "react";
@@ -34,7 +34,7 @@ export function Header() {
 
         <Link to="/" className="flex items-center -my-6 md:-my-8" aria-label="Costa Veículos — Início">
           <img
-            src={logo.url}
+            src={logoUrl}
             alt="Costa Veículos"
             className="h-36 md:h-44 w-auto object-contain"
           />
