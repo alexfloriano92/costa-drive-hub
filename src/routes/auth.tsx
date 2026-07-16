@@ -4,7 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useServerFn } from "@tanstack/react-start";
 import { useQuery } from "@tanstack/react-query";
 import { checkAdminExists, bootstrapFirstAdmin } from "@/lib/admin.functions";
-import logo from "@/assets/costa-logo.jpg.asset.json";
+import logo from "@/assets/costa-logo-transparent.png.asset.json";
 import { Link } from "@tanstack/react-router";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
