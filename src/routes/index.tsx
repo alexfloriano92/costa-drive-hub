@@ -31,7 +31,7 @@ const DEMO_VEHICLES: ReadonlyArray<{ id: string; brand: string; model: string; y
   { id: "d5", brand: "Chevrolet", model: "Onix Premier", year: 2023, mileage: 19800, price: 89900, fuel: "Flex", category: "Hatch", img: "https://images.unsplash.com/photo-1568844293986-8d0400bd4745?auto=format&fit=crop&w=1200&q=80", tag: "Baixa km" },
   { id: "d6", brand: "Toyota", model: "Hilux SRX 4x4", year: 2022, mileage: 71000, price: 289900, fuel: "Diesel", category: "Picape", img: "https://images.unsplash.com/photo-1519752594763-2633d556c1e8?auto=format&fit=crop&w=1200&q=80", tag: "Top de linha" },
   { id: "d7", brand: "Hyundai", model: "HB20 Comfort", year: 2022, mileage: 31500, price: 74900, fuel: "Flex", category: "Hatch", img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80" },
-  { id: "d8", brand: "Yamaha", model: "MT-07 ABS", year: 2023, mileage: 8200, price: 52900, fuel: "Gasolina", category: "Moto", img: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1200&q=80", tag: "Semi-nova" },
+  { id: "d8", brand: "Yamaha", model: "MT-07 ABS", year: 2023, mileage: 8200, price: 52900, fuel: "Gasolina", category: "Moto", img: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1200&q=80", tag: "Seminova" },
 ];
 
 function Home() {
