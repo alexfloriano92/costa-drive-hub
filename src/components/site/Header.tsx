@@ -36,9 +36,9 @@ export function Header() {
           <img
             src={logo.url}
             alt="Costa Veículos"
-            className="h-24 md:h-28 w-auto object-contain"
-            style={{ mixBlendMode: "screen" }}
+            className="h-36 md:h-44 w-auto object-contain"
           />
+
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
