@@ -236,7 +236,7 @@ function Home() {
           <div className="flex items-center gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
             <Users className="size-8 text-primary" />
             <div>
-              <div className="font-display text-2xl">4.9 / 5.0</div>
+              <div className="font-display text-2xl">5.0 / 5.0</div>
               <div className="text-xs text-muted-foreground">Baseado em avaliações reais de clientes</div>
             </div>
           </div>
